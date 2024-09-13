@@ -1,6 +1,6 @@
 const content = document.getElementById("slide_content")
-const slideleftBtn = document.getElementById("left-btn")
-const sliderightBtn = document.getElementById("right-btn")
+const leftBtn = document.getElementById("left-btn")
+const rightBtn = document.getElementById("right-btn")
 const title = document.getElementById("title")
 const date = document.getElementById("date")
 const img = document.getElementById("img")
@@ -47,7 +47,7 @@ title.textContent = item.title
 
 date.textContent = item.date
 
-slideleftBtn.addEventListener("click" ,function(){
+leftBtn.addEventListener("click" ,function(){
   if (index <= 0){
     index=items.length-1 
   }
@@ -61,7 +61,7 @@ slideleftBtn.addEventListener("click" ,function(){
   
   date.textContent = item.date
 })
-sliderightBtn.addEventListener("click" ,function(){
+rightBtn.addEventListener("click" ,function(){
     if (index=== items.length-1){
       index=0
      
