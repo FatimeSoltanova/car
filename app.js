@@ -1,6 +1,6 @@
 const content = document.getElementById("slide_content")
-const leftBtn = document.getElementById("left-btn")
-const rightBtn = document.getElementById("right-btn")
+const leftBtn = document.getElementById("left_btn")
+const rightBtn = document.getElementById("right_btn")
 const title = document.getElementById("title")
 const date = document.getElementById("date")
 const img = document.getElementById("img")
@@ -54,7 +54,7 @@ leftBtn.addEventListener("click" ,function(){
   else{
     index--
   }
-
+  let item = items[index]
   img.src=item.photolink
   
   title.textContent = item.title
@@ -69,7 +69,7 @@ rightBtn.addEventListener("click" ,function(){
     else{
       index++
     }
-  
+    let item = items[index]
     img.src = item.photolink
     
     title.textContent = item.title
